@@ -1,0 +1,1719 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+    
+    
+      
+        <title>Foam-document</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f72e892.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#foam" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="." title="Foam-document" class="md-header-nav__button md-logo" aria-label="Foam-document">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Foam-document
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Foam
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Foam-document" class="md-nav__button md-logo" aria-label="Foam-document">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Foam-document
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Foam
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="." title="Foam" class="md-nav__link md-nav__link--active">
+      Foam
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-use-foam" class="md-nav__link">
+    How do I use Foam?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-in-a-foam" class="md-nav__link">
+    What's in a Foam?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-to-adventure" class="md-nav__link">
+    Call To Adventure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thanks-and-attribution" class="md-nav__link">
+    Thanks and attribution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="backlinking/" title="Backlinking" class="md-nav__link">
+      Backlinking
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="contribution-guide/" title="Contribution Guide" class="md-nav__link">
+      Contribution Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="frequently-asked-questions/" title="Frequently Asked Questions" class="md-nav__link">
+      Frequently Asked Questions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="katex-math-rendering/" title="Katex Math Rendering" class="md-nav__link">
+      Katex Math Rendering
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="note-macros/" title="Custom Note Macros" class="md-nav__link">
+      Custom Note Macros
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="principles/" title="Principles" class="md-nav__link">
+      Principles
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="recommended-extensions/" title="Recommended Extensions" class="md-nav__link">
+      Recommended Extensions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="roadmap/" title="Roadmap" class="md-nav__link">
+      Roadmap
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="vercel/" title="Vercel" class="md-nav__link">
+      Vercel
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="wiki-links/" title="Wiki Links" class="md-nav__link">
+      Wiki Links
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Meeting notes
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Meeting notes" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        <span class="md-nav__icon md-icon"></span>
+        Meeting notes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="meeting-notes/foam-core-2020-07-11/" title="Foam Core 2020-07-11" class="md-nav__link">
+      Foam Core 2020-07-11
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Migrate
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Migrate" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        <span class="md-nav__icon md-icon"></span>
+        Migrate
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="migrate/migrating-from-obsidian/" title="Migrating from Obsidian (stub)" class="md-nav__link">
+      Migrating from Obsidian (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="migrate/migrating-from-onenote/" title="Migrating from OneNote" class="md-nav__link">
+      Migrating from OneNote
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="migrate/migrating-from-roam/" title="Migrating from Roam (stub)" class="md-nav__link">
+      Migrating from Roam (stub)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Recipes
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Recipes" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        <span class="md-nav__icon md-icon"></span>
+        Recipes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/automatically-expand-urls-to-well-titled-links/" title="Automatically Expand URLs to Well-Titled Links" class="md-nav__link">
+      Automatically Expand URLs to Well-Titled Links
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/azure-devops-wiki/" title="Azure DevOps Wiki" class="md-nav__link">
+      Azure DevOps Wiki
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/capture-notes-with-drafts-pro/" title="Capture Notes With Drafts Pro" class="md-nav__link">
+      Capture Notes With Drafts Pro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/creating-new-notes/" title="Creating New Notes" class="md-nav__link">
+      Creating New Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/custom-markdown-preview-styles/" title="Custom Markdown Preview Styles" class="md-nav__link">
+      Custom Markdown Preview Styles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/customising-styles/" title="Customising Styles" class="md-nav__link">
+      Customising Styles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/daily-notes/" title="Daily notes" class="md-nav__link">
+      Daily notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/diagrams-in-markdown/" title="Diagrams in Markdown" class="md-nav__link">
+      Diagrams in Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/eleventy-and-netlify/" title="Eleventy and Netlify" class="md-nav__link">
+      Eleventy and Netlify
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/gistpad/" title="GistPad" class="md-nav__link">
+      GistPad
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/git-integration/" title="Git integration" class="md-nav__link">
+      Git integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/gitee-pages/" title="Gitee Pages" class="md-nav__link">
+      Gitee Pages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/github-pages/" title="Github Pages" class="md-nav__link">
+      Github Pages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/gitlab-pages/" title="GitLab Pages" class="md-nav__link">
+      GitLab Pages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/good-first-task/" title="Good First Task" class="md-nav__link">
+      Good First Task
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/graph-visualisation/" title="Graph visualisation" class="md-nav__link">
+      Graph visualisation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/how-to-write-recipes/" title="How to Write Recipes" class="md-nav__link">
+      How to Write Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/images-from-your-clipboard/" title="Images from your Clipboard" class="md-nav__link">
+      Images from your Clipboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/link-formatting-and-autocompletion/" title="Link Formatting and Autocompletion" class="md-nav__link">
+      Link Formatting and Autocompletion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/math-support/" title="Math Support" class="md-nav__link">
+      Math Support
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/reference-lists/" title="Reference Lists" class="md-nav__link">
+      Reference Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/shows-image-preview-on-hover/" title="Shows Image Preview on Hover" class="md-nav__link">
+      Shows Image Preview on Hover
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/todo/" title="Todo" class="md-nav__link">
+      Todo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recipes/unlinked-references/" title="Unlinked references (stub)" class="md-nav__link">
+      Unlinked references (stub)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
+    
+    <label class="md-nav__link" for="nav-16">
+      Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Reference" data-md-level="1">
+      <label class="md-nav__title" for="nav-16">
+        <span class="md-nav__icon md-icon"></span>
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/automatic-git-syncing/" title="Automatic Git Syncing (stub)" class="md-nav__link">
+      Automatic Git Syncing (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/big-vision/" title="Big Vision" class="md-nav__link">
+      Big Vision
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/block-references/" title="Block References (stub)" class="md-nav__link">
+      Block References (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/blog/" title="Foam Blog" class="md-nav__link">
+      Foam Blog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/build-vs-assemble/" title="Build vs Assemble" class="md-nav__link">
+      Build vs Assemble
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/cli/" title="Command Line Interface" class="md-nav__link">
+      Command Line Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/code-of-conduct/" title="Code of Conduct" class="md-nav__link">
+      Code of Conduct
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/creating-a-new-language/" title="Creating a New Language" class="md-nav__link">
+      Creating a New Language
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/custom-snippets/" title="Adding Custom Snippets" class="md-nav__link">
+      Adding Custom Snippets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/decision-needed/" title="Decision Needed" class="md-nav__link">
+      Decision Needed
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/decision/" title="Decision" class="md-nav__link">
+      Decision
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/feature-comparison/" title="Feature comparison" class="md-nav__link">
+      Feature comparison
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/foam-core/" title="Foam Core" class="md-nav__link">
+      Foam Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/foam-file-format/" title="Foam File Format" class="md-nav__link">
+      Foam File Format
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/foam-linter/" title="Foam Linter (stub)" class="md-nav__link">
+      Foam Linter (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/git-flows-for-teams/" title="Git Flows for Teams (stub)" class="md-nav__link">
+      Git Flows for Teams (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/graph-in-published-workspace/" title="Graph in Published Workspace (stub)" class="md-nav__link">
+      Graph in Published Workspace (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/improve-default-workspace-settings/" title="Improve Default Workspace Settings (stub)" class="md-nav__link">
+      Improve Default Workspace Settings (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/improved-backlinking/" title="Improved Backlinking (stub)" class="md-nav__link">
+      Improved Backlinking (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/improved-static-site-generation/" title="Improved Static Site Generation (stub)" class="md-nav__link">
+      Improved Static Site Generation (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/inbox/" title="Inbox" class="md-nav__link">
+      Inbox
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/key-bindings/" title="Key Bindings" class="md-nav__link">
+      Key Bindings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/known-issues/" title="Known Issues" class="md-nav__link">
+      Known Issues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/link-reference-definition-improvements/" title="Link Reference Definition Improvements" class="md-nav__link">
+      Link Reference Definition Improvements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/link-reference-definitions/" title="Link Reference Definitions" class="md-nav__link">
+      Link Reference Definitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/linking-between-published-workspaces/" title="Linking between Published Workspaces (stub)" class="md-nav__link">
+      Linking between Published Workspaces (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/make-backlinks-more-prominent/" title="Make Backlinks More Prominent" class="md-nav__link">
+      Make Backlinks More Prominent
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/materialized-backlinks/" title="Materialized Backlinks (stub)" class="md-nav__link">
+      Materialized Backlinks (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/mdx-by-default/" title="MDX by Default(stub)" class="md-nav__link">
+      MDX by Default(stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/mobile-apps/" title="Mobile Apps" class="md-nav__link">
+      Mobile Apps
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/officially-support-alternative-templates/" title="Officially Support Alternative Templates (stub)" class="md-nav__link">
+      Officially Support Alternative Templates (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/packaged-desktop-app/" title="Packaged Desktop App (stub)" class="md-nav__link">
+      Packaged Desktop App (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/predefined-user-snippets/" title="Pre-defined User Snippets" class="md-nav__link">
+      Pre-defined User Snippets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/publishing-pages/" title="Publishing pages" class="md-nav__link">
+      Publishing pages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/publishing-permissions/" title="Publishing Permissions(stub)" class="md-nav__link">
+      Publishing Permissions(stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/random-thoughts/" title="Random thoughts" class="md-nav__link">
+      Random thoughts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/reading-list/" title="Reading list" class="md-nav__link">
+      Reading list
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/real-time-collaboration/" title="Real-time Collaboration" class="md-nav__link">
+      Real-time Collaboration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/refactoring-via-language-server-protocol/" title="Refactoring via Language Server Protocol (stub)" class="md-nav__link">
+      Refactoring via Language Server Protocol (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/referencing-notes-by-title/" title="Referencing notes by title" class="md-nav__link">
+      Referencing notes by title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/renaming-files/" title="Renaming files (stub)" class="md-nav__link">
+      Renaming files (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/requirements/" title="Requirements" class="md-nav__link">
+      Requirements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/search-for-notes/" title="Search for Notes" class="md-nav__link">
+      Search for Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/search-in-published-workspace/" title="Search in Published Workspace (stub)" class="md-nav__link">
+      Search in Published Workspace (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/terminology/" title="Terminology" class="md-nav__link">
+      Terminology
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/tutorial-adding-a-new-command-to-the-vs-code-extension/" title="Tutorial: Adding a New Command to the VS Code Extension" class="md-nav__link">
+      Tutorial: Adding a New Command to the VS Code Extension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/user-settings/" title="User Settings (stub)" class="md-nav__link">
+      User Settings (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/web-editor/" title="Web Editor (stub)" class="md-nav__link">
+      Web Editor (stub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="reference/workspace-janitor/" title="Janitor" class="md-nav__link">
+      Janitor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-use-foam" class="md-nav__link">
+    How do I use Foam?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-in-a-foam" class="md-nav__link">
+    What's in a Foam?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-to-adventure" class="md-nav__link">
+    Call To Adventure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thanks-and-attribution" class="md-nav__link">
+    Thanks and attribution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="foam">Foam<a class="headerlink" href="#foam" title="Permanent link">#</a></h1>
+<p><strong>Foam</strong> is a personal knowledge management and sharing system inspired by <a href="https://roamresearch.com/">Roam Research</a>, built on <a href="https://code.visualstudio.com/">Visual Studio Code</a> and <a href="https://github.com/">GitHub</a>.</p>
+<p>You can use <strong>Foam</strong> for organising your research, keeping re-discoverable notes, writing long-form content and, optionally, publishing it to the web.</p>
+<p><strong>Foam</strong> is free, open source, and extremely extensible to suit your personal workflow. You own the information you create with Foam, and you're free to share it, and collaborate on it with anyone you want.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><strong>New!</strong> <a href="https://discord.gg/rtdZKgj">Join Foam community Discord</a> for users and contributors!</p>
+</div>
+<div class="website-only">
+    <a class="github-button" href="https://github.com/foambubble/foam" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star foambubble/foam on GitHub">Star</a> 
+    <a class="github-button" href="https://github.com/foambubble/foam-template" data-icon="octicon-repo-template" data-size="large" aria-label="Use this template foambubble/foam-template on GitHub">Use foam-jekyll-template</a>
+</div>
+
+<h2 id="how-do-i-use-foam">How do I use Foam?<a class="headerlink" href="#how-do-i-use-foam" title="Permanent link">#</a></h2>
+<p><strong>Foam</strong> is a tool that supports creating relationships between thoughts and information to help you think better.</p>
+<p><img alt="Foam kitchen sink, showing a few of the key features" src="assets/images/foam-features-dark-mode-demo.png" /></p>
+<p>Whether you want to build a <a href="https://www.buildingasecondbrain.com/">Second Brain</a> or a <a href="https://zettelkasten.de/posts/overview/">Zettelkasten</a>, write a book, or just get better at long-term learning, <strong>Foam</strong> can help you organise your thoughts if you follow these simple rules:</p>
+<ol>
+<li>Create a single <strong>Foam</strong> workspace for all your knowledge and research following the <a href="#getting-started">Getting started</a> guide.</li>
+<li>Write your thoughts in markdown documents (I like to call them <strong>Bubbles</strong>, but that might be more than a little twee). These documents should be atomic: Put things that belong together into a single document, and limit its content to that single topic. (<a href="https://zettelkasten.de/posts/overview/#principles">source</a>)</li>
+<li>Use Foam's shortcuts and autocompletions to link your thoughts together with <code>[wiki-links](./wiki-links.md)</code>, and navigate between them to explore your knowledge graph.</li>
+<li>Get an overview of your <strong>Foam</strong> workspace using a <a href="recipes/graph-visualisation/">graph-visualisation</a> (⚠️ WIP), and discover relationships between your thoughts with the use of <a href="backlinking/">backlinking</a>.</li>
+</ol>
+<p>Foam is a like a bathtub: <em>What you get out of it depends on what you put into it.</em></p>
+<h2 id="whats-in-a-foam">What's in a Foam?<a class="headerlink" href="#whats-in-a-foam" title="Permanent link">#</a></h2>
+<p>Like the soapy suds it's named after, <strong>Foam</strong> is mostly air.</p>
+<ol>
+<li>The editing experience of <strong>Foam</strong> is powered by VS Code, enhanced by workspace settings that glue together <a href="recommended-extensions/">recommended-extensions</a> and preferences optimised for writing and navigating information.</li>
+<li>To back up, collaborate on and share your content between devices, Foam pairs well with <a href="http://github.com/">GitHub</a>.</li>
+<li>To publish your content, you can set it up to publish to <a href="https://pages.github.com/">GitHub Pages</a> with zero code and zero config, or to any website hosting platform like <a href="http://netlify.com/">Netlify</a> or <a href="https://vercel.com">Vercel</a>.</li>
+</ol>
+<blockquote>
+<p><strong>Fun fact</strong>: This documentation was researched, written and published using <strong>Foam</strong>.</p>
+</blockquote>
+<h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">#</a></h2>
+<blockquote>
+<p>⚠️ Foam is still in preview. Expect the experience to be a little rough.</p>
+</blockquote>
+<p>These instructions assume you have a GitHub account, and you have Visual Studio Code installed.</p>
+<ol>
+<li>Use the <a href="https://github.com/foambubble/foam-template">foam-template project</a> to generate a new repository. If you're logged into GitHub, you can just hit this button:</li>
+</ol>
+<p><a class="github-button" href="https://github.com/foambubble/foam-template/generate" data-icon="octicon-repo-template" data-size="large" aria-label="Use this template foambubble/foam-template on GitHub">Use this template</a></p>
+<p><em>If you want to keep your thoughts to yourself, remember to set the repository private, or if you don't want to use GitHub to host your workspace at all, choose <a href="https://github.com/foambubble/foam-template/archive/master.zip"><strong>Download as ZIP</strong></a> instead of **Use this template*</em>.*</p>
+<ol>
+<li>
+<p><a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">Clone the repository locally</a> and open it in VS Code.</p>
+<p><em>Open the repository as a folder using the <code>File &gt; Open...</code> menu item. In VS Code, "open workspace" refers to <a href="https://code.visualstudio.com/docs/editor/multi-root-workspaces">multi-root workspaces</a>.</em></p>
+</li>
+<li>
+<p>When prompted to install recommended extensions, click <strong>Install all</strong> (or <strong>Show Recommendations</strong> if you want to review and install them one by one)</p>
+</li>
+</ol>
+<p>After setting up the repository, open <code>.vscode/settings.json</code> and edit, add or remove any settings you'd like for your Foam workspace.</p>
+<p>To learn more about how to use <strong>Foam</strong>, read the <a href="recipes/">recipes</a>.</p>
+<p>Getting stuck in the setup? Read the <a href="frequently-asked-questions/">frequently-asked-questions</a>.</p>
+<p>There are <a href="reference/known-issues/">known-issues</a>, and I'm sure, many unknown issues! Please <a href="http://github.com/foambubble/foam/issues">report them on GitHub</a>!</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">#</a></h2>
+<p><strong>Foam</strong> doesn't have features in the traditional sense. Out of the box, you have access to all features of VS Code and all the <a href="recommended-extensions/">recommended-extensions</a> you choose to install, but it's up to you to discover what you can do with it!</p>
+<p><img alt="Short video of Foam in use" src="assets/images/foam-navigation-demo.gif" /></p>
+<p>Head over to <a href="recipes/">recipes</a> for some useful patterns and ideas!</p>
+<h2 id="call-to-adventure">Call To Adventure<a class="headerlink" href="#call-to-adventure" title="Permanent link">#</a></h2>
+<p>The goal of <strong>Foam</strong> is to be your personal companion on your quest for knowledge.</p>
+<p>It's currently about "10% ready" relative to all the features I've thought of, but I've only thought of ~1% of the features it could have, and I'm excited to learn from others.</p>
+<p>I am using it as my personal thinking tool. By making it public, I hope to learn from others not only how to improve Foam, but also to improve how I learn and manage information.</p>
+<p>If that sounds like something you're interested in, I'd love to have you along on the journey.</p>
+<ul>
+<li>Check out <a href="roadmap/">roadmap</a> to see what's in the plans</li>
+<li>Read about our <a href="principles/">principles</a> to understand Foam's philosophy and direction</li>
+<li>Read the <a href="contribution-guide/">contribution-guide</a> guide to learn how to participate.</li>
+<li>Feel free to open <a href="https://github.com/foambubble/foam/issues">GitHub issues</a> to give me feedback and ideas for new features.</li>
+</ul>
+<h2 id="thanks-and-attribution">Thanks and attribution<a class="headerlink" href="#thanks-and-attribution" title="Permanent link">#</a></h2>
+<p><strong>Foam</strong> is built by <a href="https://github.com/jevakallio">Jani Eväkallio</a> (<a href="https://twitter.com/jevakallio">@jevakallio</a>), and all our contributors:</p>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
+<!-- prettier-ignore-start -->
+
+<!-- markdownlint-disable -->
+
+<table>
+  <tr>
+    <td align="center"><a href="https://jevakallio.dev/"><img src="https://avatars1.githubusercontent.com/u/1203949?v=4" width="60px;" alt=""/><br /><sub><b>Jani Eväkallio</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=jevakallio" title="Code">💻</a> <a href="https://github.com/foambubble/foam/commits?author=jevakallio" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://joeprevite.com/"><img src="https://avatars3.githubusercontent.com/u/3806031?v=4" width="60px;" alt=""/><br /><sub><b>Joe Previte</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=jsjoeio" title="Code">💻</a> <a href="https://github.com/foambubble/foam/commits?author=jsjoeio" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/riccardoferretti"><img src="https://avatars3.githubusercontent.com/u/457005?v=4" width="60px;" alt=""/><br /><sub><b>Riccardo</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=riccardoferretti" title="Code">💻</a> <a href="https://github.com/foambubble/foam/commits?author=riccardoferretti" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://ojanaho.com/"><img src="https://avatars0.githubusercontent.com/u/2180090?v=4" width="60px;" alt=""/><br /><sub><b>Janne Ojanaho</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=jojanaho" title="Code">💻</a> <a href="https://github.com/foambubble/foam/commits?author=jojanaho" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://bypaulshen.com/"><img src="https://avatars3.githubusercontent.com/u/2266187?v=4" width="60px;" alt=""/><br /><sub><b>Paul Shen</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=paulshen" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/coffenbacher"><img src="https://avatars0.githubusercontent.com/u/245867?v=4" width="60px;" alt=""/><br /><sub><b>coffenbacher</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=coffenbacher" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://mathieu.dutour.me/"><img src="https://avatars2.githubusercontent.com/u/3254314?v=4" width="60px;" alt=""/><br /><sub><b>Mathieu Dutour</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=mathieudutour" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/presidentelect"><img src="https://avatars2.githubusercontent.com/u/1242300?v=4" width="60px;" alt=""/><br /><sub><b>Michael Hansen</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=presidentelect" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://klickverbot.at/"><img src="https://avatars1.githubusercontent.com/u/19335?v=4" width="60px;" alt=""/><br /><sub><b>David Nadlinger</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=dnadlinger" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://pluckd.co/"><img src="https://avatars2.githubusercontent.com/u/20598571?v=4" width="60px;" alt=""/><br /><sub><b>Fernando</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=MrCordeiro" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/jfgonzalez7"><img src="https://avatars3.githubusercontent.com/u/58857736?v=4" width="60px;" alt=""/><br /><sub><b>Juan Gonzalez</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=jfgonzalez7" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.louiechristie.com/"><img src="https://avatars1.githubusercontent.com/u/6807448?v=4" width="60px;" alt=""/><br /><sub><b>Louie Christie</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=louiechristie" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://supersandro.de/"><img src="https://avatars2.githubusercontent.com/u/7258858?v=4" width="60px;" alt=""/><br /><sub><b>Sandro</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=SuperSandro2000" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Skn0tt"><img src="https://avatars1.githubusercontent.com/u/14912729?v=4" width="60px;" alt=""/><br /><sub><b>Simon Knott</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=Skn0tt" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://styfle.dev/"><img src="https://avatars1.githubusercontent.com/u/229881?v=4" width="60px;" alt=""/><br /><sub><b>Steven</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=styfle" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Georift"><img src="https://avatars2.githubusercontent.com/u/859430?v=4" width="60px;" alt=""/><br /><sub><b>Tim</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=Georift" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/sauravkhdoolia"><img src="https://avatars1.githubusercontent.com/u/34188267?v=4" width="60px;" alt=""/><br /><sub><b>Saurav Khdoolia</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=sauravkhdoolia" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://anku.netlify.com/"><img src="https://avatars1.githubusercontent.com/u/22813027?v=4" width="60px;" alt=""/><br /><sub><b>Ankit Tiwari</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=anku255" title="Documentation">📖</a> <a href="https://github.com/foambubble/foam/commits?author=anku255" title="Tests">⚠️</a> <a href="https://github.com/foambubble/foam/commits?author=anku255" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ayushbaweja"><img src="https://avatars1.githubusercontent.com/u/44344063?v=4" width="60px;" alt=""/><br /><sub><b>Ayush Baweja</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=ayushbaweja" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/TaiChi-IO"><img src="https://avatars3.githubusercontent.com/u/65092992?v=4" width="60px;" alt=""/><br /><sub><b>TaiChi-IO</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=TaiChi-IO" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/juanfrank77"><img src="https://avatars1.githubusercontent.com/u/12146882?v=4" width="60px;" alt=""/><br /><sub><b>Juan F Gonzalez </b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=juanfrank77" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://sanketdg.github.io"><img src="https://avatars3.githubusercontent.com/u/8980971?v=4" width="60px;" alt=""/><br /><sub><b>Sanket Dasgupta</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=SanketDG" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/nstafie"><img src="https://avatars1.githubusercontent.com/u/10801854?v=4" width="60px;" alt=""/><br /><sub><b>Nicholas Stafie</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=nstafie" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/francishamel"><img src="https://avatars3.githubusercontent.com/u/36383308?v=4" width="60px;" alt=""/><br /><sub><b>Francis Hamel</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=francishamel" title="Code">💻</a></td>
+    <td align="center"><a href="http://digiguru.co.uk"><img src="https://avatars1.githubusercontent.com/u/619436?v=4" width="60px;" alt=""/><br /><sub><b>digiguru</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=digiguru" title="Code">💻</a> <a href="https://github.com/foambubble/foam/commits?author=digiguru" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/chirag-singhal"><img src="https://avatars3.githubusercontent.com/u/42653703?v=4" width="60px;" alt=""/><br /><sub><b>CHIRAG SINGHAL</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=chirag-singhal" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/lostintangent"><img src="https://avatars3.githubusercontent.com/u/116461?v=4" width="60px;" alt=""/><br /><sub><b>Jonathan Carter</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=lostintangent" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.synesthesia.co.uk"><img src="https://avatars3.githubusercontent.com/u/181399?v=4" width="60px;" alt=""/><br /><sub><b>Julian Elve</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=synesthesia" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/thomaskoppelaar"><img src="https://avatars3.githubusercontent.com/u/36331365?v=4" width="60px;" alt=""/><br /><sub><b>Thomas Koppelaar</b></sub></a><br /><a href="#question-thomaskoppelaar" title="Answering Questions">💬</a> <a href="https://github.com/foambubble/foam/commits?author=thomaskoppelaar" title="Code">💻</a> <a href="#userTesting-thomaskoppelaar" title="User Testing">📓</a></td>
+    <td align="center"><a href="http://www.akshaymehra.com"><img src="https://avatars1.githubusercontent.com/u/8671497?v=4" width="60px;" alt=""/><br /><sub><b>Akshay</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=MehraAkshay" title="Code">💻</a></td>
+    <td align="center"><a href="http://johnlindquist.com"><img src="https://avatars0.githubusercontent.com/u/36073?v=4" width="60px;" alt=""/><br /><sub><b>John Lindquist</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=johnlindquist" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://ashwin.run/"><img src="https://avatars2.githubusercontent.com/u/1689183?v=4" width="60px;" alt=""/><br /><sub><b>Ashwin Ramaswami</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=epicfaace" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Klaudioz"><img src="https://avatars1.githubusercontent.com/u/632625?v=4" width="60px;" alt=""/><br /><sub><b>Claudio Canales</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=Klaudioz" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/vitaly-pevgonen"><img src="https://avatars0.githubusercontent.com/u/6272738?v=4" width="60px;" alt=""/><br /><sub><b>vitaly-pevgonen</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=vitaly-pevgonen" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://dshemetov.github.io"><img src="https://avatars0.githubusercontent.com/u/1810426?v=4" width="60px;" alt=""/><br /><sub><b>Dmitry Shemetov</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=dshemetov" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/hooncp"><img src="https://avatars1.githubusercontent.com/u/48883554?v=4" width="60px;" alt=""/><br /><sub><b>hooncp</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=hooncp" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://rt-canada.ca"><img src="https://avatars1.githubusercontent.com/u/13721239?v=4" width="60px;" alt=""/><br /><sub><b>Martin Laws</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=martinlaws" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://seanksmith.me"><img src="https://avatars3.githubusercontent.com/u/2085441?v=4" width="60px;" alt=""/><br /><sub><b>Sean K Smith</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=sksmith" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/kevin-neely/"><img src="https://avatars1.githubusercontent.com/u/37545028?v=4" width="60px;" alt=""/><br /><sub><b>Kevin Neely</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=kneely" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://ariefrahmansyah.dev"><img src="https://avatars3.githubusercontent.com/u/8122852?v=4" width="60px;" alt=""/><br /><sub><b>Arief Rahmansyah</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=ariefrahmansyah" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://vhanda.in"><img src="https://avatars2.githubusercontent.com/u/426467?v=4" width="60px;" alt=""/><br /><sub><b>Vishesh Handa</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=vHanda" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.linkedin.com/in/heroichitesh"><img src="https://avatars3.githubusercontent.com/u/37622734?v=4" width="60px;" alt=""/><br /><sub><b>Hitesh Kumar</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=HeroicHitesh" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://spencerwoo.com"><img src="https://avatars2.githubusercontent.com/u/32114380?v=4" width="60px;" alt=""/><br /><sub><b>Spencer Woo</b></sub></a><br /><a href="https://github.com/foambubble/foam/commits?author=spencerwooo" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+<p><strong>Foam</strong> was inspired by <a href="https://roamresearch.com/">Roam Research</a> and the <a href="https://zettelkasten.de/posts/overview">Zettelkasten methodology</a></p>
+<p><strong>Foam</strong> wouldn't be possible without <a href="https://code.visualstudio.com/">Visual Studio Code</a> and <a href="https://github.com/">GitHub</a>, and relies heavily on our fantastic open source <a href="recommended-extensions/">recommended-extensions</a> and all their contributors!</p>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">#</a></h2>
+<p>Foam is licensed under the <a href="license">MIT license</a>.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="backlinking/" title="Backlinking" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Backlinking
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: ['navigation.expand', 'tabs'],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
